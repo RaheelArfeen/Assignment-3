@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/cab62e4741.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+        *{
+            font-family: 'Sora', sans-serif;
+        }
+        html{
+            font-size: 86%;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'pale-primary': '#FFF9F4',
+                'text-primary': '#111111'
+              }
+            }
+          }
+        }
+      </script>
+    <title>Pet Shop</title>
+</head>
+<body>
+
+    <header class="w-full bg- py-5 bg-pale-primary text-text-primary border-b border-text-primary md:border-none">
+        <nav class="flex lg:container mx-auto px-8 justify-between items-center">
+            <div class="flex items-center logo text-[1.6rem]"><img class="mr-[12px]" src="assets/logo-header.svg"><p class="hidden lg:block text-2xl">Browse<span class="text-yellow-400">4</span>Pets</p></div>
+            <ul class="flex gap-x-12 text-xl">
+                <li class="hidden lg:block"><a href="#">Find a pet</a></li>
+                <li class="hidden lg:block"><a href="#">Breeds</a></li>
+                <li class="hidden lg:block"><a href="#">Contact us</a></li>
+            </ul>
+            <div class="flex items-center gap-4">
+                <i class="fa-solid fa-bell text-2xl cursor-pointer hidden lg:block"></i>
+                <i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hidden lg:block"></i>
+                <button class="px-[30px] py-[10px] border border-yellow-300 rounded-lg hover:bg-yellow-300 duration-300 hidden lg:block">Login</button>
+                <button class="px-[30px] py-[10px] border border-yellow-300 bg-yellow-300 rounded-lg hover:bg-transparent hidden lg:block duration-300">Register</button>
+            </div>
+            <i class="fa-solid fa-bars block lg:hidden text-3xl"></i>
+        </nav>
+    </header>
+    
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
