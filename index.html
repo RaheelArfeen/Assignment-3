@@ -23,6 +23,9 @@
         tailwind.config = {
           theme: {
             extend: {
+              backgroundImage: {
+                'footer-texture': "url('/assets/cat-big.png')",
+              },
               colors: {
                 clifford: '#da373d',
                 'pale-primary': '#FFF9F4',
@@ -37,8 +40,8 @@
 </head>
 <body>
 
-    <header class="w-full bg-pale-primary pt-5 text-text-primary border-b border-text-primary md:border-none">
-        <nav class="flex lg:container mx-auto px-8 justify-between items-center">
+    <header class="w-full bg-pale-primary pt-5 text-text-primary  md:border-none">
+        <nav class="flex lg:container mx-auto px-6 justify-between items-center">
             <div class="flex items-center logo text-[1.6rem]"><img class="mr-[12px]" src="assets/logo-header.svg"><p class="hidden lg:block text-2xl">Browse<span class="text-yellow-400">4</span>Pets</p></div>
             <ul class="flex gap-x-12 text-xl">
                 <li class="hidden lg:block"><a href="#">Find a pet</a></li>
@@ -54,13 +57,12 @@
             <i class="fa-solid fa-bars block lg:hidden text-3xl"></i>
           </nav>
           <!-- Banner section -->
-          <div class="bg-black mt-5">
-            <div class="md:container bg-red-500 mx-auto pt-[100px] h-">
-              <!-- content section -->
-              <div class="max-w-3xl h-[375px] bg-sky-500">
-                <h1 class="text-7xl mb-12">Pamper Your Pet, Because They Deserve the Bes</h1>
-                <p class="text-2xl mb-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="text-2xl py-[10px] px-[30px] bg-btn-primary rounded-lg">Find a pet</button>
+          <div class="bg-white mt-5 border-t md:border-none border-text-primary">
+            <div class="md:container px-6 mx-auto md:pt-[100px] pt-[50px] bg-[url('/assets/cat-big.png')] bg-no-repeat bg-right md:min-h-[1100px] min-h-[750px] lg:min-h-[800px] bg-contain">
+              <div class="md:max-w-[680px] max-w-[380px]">
+                <h1 class="md:text-7xl text-4xl md:mb-12 mb-4">Pamper Your Pet, Because They Deserve the Bes</h1>
+                <p class="md:text-2xl text-lg mb-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="md:text-2xl text-xl py-[10px] px-[30px] bg-btn-primary rounded-lg">Find a pet</button>
               </div>
             </div>
           </div>
