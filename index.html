@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo-header.svg" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/cab62e4741.js" crossorigin="anonymous"></script>
     <style>
@@ -25,7 +26,8 @@
               colors: {
                 clifford: '#da373d',
                 'pale-primary': '#FFF9F4',
-                'text-primary': '#111111'
+                'text-primary': '#111111',
+                'btn-primary': '#ffdc26'
               }
             }
           }
@@ -35,7 +37,7 @@
 </head>
 <body>
 
-    <header class="w-full bg- py-5 bg-pale-primary text-text-primary border-b border-text-primary md:border-none">
+    <header class="w-full bg-pale-primary pt-5 text-text-primary border-b border-text-primary md:border-none">
         <nav class="flex lg:container mx-auto px-8 justify-between items-center">
             <div class="flex items-center logo text-[1.6rem]"><img class="mr-[12px]" src="assets/logo-header.svg"><p class="hidden lg:block text-2xl">Browse<span class="text-yellow-400">4</span>Pets</p></div>
             <ul class="flex gap-x-12 text-xl">
@@ -46,23 +48,25 @@
             <div class="flex items-center gap-4">
                 <i class="fa-solid fa-bell text-2xl cursor-pointer hidden lg:block"></i>
                 <i class="fa-solid fa-magnifying-glass text-2xl cursor-pointer hidden lg:block"></i>
-                <button class="px-[30px] py-[10px] border border-yellow-300 rounded-lg hover:bg-yellow-300 duration-300 hidden lg:block">Login</button>
-                <button class="px-[30px] py-[10px] border border-yellow-300 bg-yellow-300 rounded-lg hover:bg-transparent hidden lg:block duration-300">Register</button>
+                <button class="text-xl px-[30px] py-[10px] border border-btn-primary rounded-lg hover:bg-btn-primary duration-300 hidden lg:block">Login</button>
+                <button class="text-xl px-[30px] py-[10px] border border-btn-primary bg-btn-primary rounded-lg hover:bg-transparent hidden lg:block duration-300">Register</button>
             </div>
             <i class="fa-solid fa-bars block lg:hidden text-3xl"></i>
           </nav>
+          <!-- Banner section -->
+          <div class="bg-black mt-5">
+            <div class="md:container bg-red-500 mx-auto pt-[100px] h-">
+              <!-- content section -->
+              <div class="max-w-3xl h-[375px] bg-sky-500">
+                <h1 class="text-7xl mb-12">Pamper Your Pet, Because They Deserve the Bes</h1>
+                <p class="text-2xl mb-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="text-2xl py-[10px] px-[30px] bg-btn-primary rounded-lg">Find a pet</button>
+              </div>
+            </div>
+          </div>
     </header>
     
     <main>
-      <!-- Banner section -->
-      <div class="md:container mx-auto">
-        <div class="content">
-          <h1 class="text-6xl">Pamper Your Pet, Because They Deserve the Bes</h1>
-          <p class="text-xl">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-          <button class="py-[10px] px-[30px] bg-yellow-300 rounded-lg">Find a pet</button>
-        </div>
-        <img src="assets/cat-big.png" alt="">
-      </div>
     </main>
 
     <footer>
