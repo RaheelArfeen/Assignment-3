@@ -1,69 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/logo-header.svg" type="image/x-icon">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://kit.fontawesome.com/cab62e4741.js" crossorigin="anonymous"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
-        *{
-            font-family: 'Sora', sans-serif;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/logo-header.svg" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/cab62e4741.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+      *{
+          font-family: 'Sora', sans-serif;
+      }
+      body::-webkit-scrollbar{
+        display: none;
+      }
+      html{
+          font-size: 86%;
+      }
+      h1, h1 span{
+        font-family: 'ADLaM Display', sans-serif;
+      }
+      .ml-5 p.text-xl{
+        font-family: 'ADLaM Display', sans-serif;
+      }
+      footer{
+        background: #ffed92;
+      }
+      .adlam{
+        font-family: 'AdLaM Display', sans-serif;
+      }
+      .scale{
+        animation: scale 1s alternate infinite ease-in-out;
+      }
+      @keyframes scale {
+        0%{
+          transform: scale(1) rotate(5deg);
         }
-        body::-webkit-scrollbar{
-          display: none;
+        50%{
+          transform: scale(1) rotate(-5deg);
         }
-        html{
-            font-size: 86%;
+        100%{
+          transform: scale(1.1) rotate(5deg);
         }
-        h1, h1 span{
-          font-family: 'ADLaM Display', sans-serif;
-        }
-        .ml-5 p.text-xl{
-          font-family: 'ADLaM Display', sans-serif;
-        }
-        footer{
-          background: #ffed92;
-        }
-        .adlam{
-          font-family: 'AdLaM Display', sans-serif;
-        }
-        .scale{
-          animation: scale 1s alternate infinite ease-in-out;
-        }
-        @keyframes scale {
-          0%{
-            transform: scale(1) rotate(5deg);
-          }
-          50%{
-            transform: scale(1) rotate(-5deg);
-          }
-          100%{
-            transform: scale(1.1) rotate(5deg);
-          }
-        }
-    </style>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              backgroundImage: {
-                'footer-texture': "url('/assets/cat-big.png')",
-              },
-              colors: {
-                clifford: '#da373d',
-                'pale-primary': '#fff9f4',
-                'text-primary': '#111111',
-                'btn-primary': '#ffdc26',
-                'card-primary': '#F9DF8A'
-              }
+      }
+  </style>
+  <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'footer-texture': "url('/assets/cat-big.png')",
+            },
+            colors: {
+              clifford: '#da373d',
+              'pale-primary': '#fff9f4',
+              'text-primary': '#111111',
+              'btn-primary': '#ffdc26',
+              'card-primary': '#F9DF8A'
             }
           }
         }
-      </script>
-    <title>Pet Shop</title>
+      }
+    </script>
+  <title>Pet Shop</title>
 </head>
 <body>
 
@@ -87,16 +89,7 @@
           <section class="bg-white mt-5 border-t md:border-none border-text-primary">
             <div class="md:container px-6 mx-auto md:pt-[100px] pt-[50px] bg-[url('assets/cat-big.png')] bg-no-repeat bg-right md:min-h-[1100px] min-h-[750px] lg:min-h-[800px] bg-contain">
               <div class="md:max-w-[680px] max-w-[380px]">
-                <h1 class="md:text-7xl text-4xl md:mb-12 mb-4 bouncing-text">
-                  <span style="--i:0">P</span><span style="--i:1">a</span><span style="--i:2">m</span><span style="--i:3">p</span><span style="--i:4">e</span><span style="--i:5">r</span> 
-                  <span style="--i:6">Y</span><span style="--i:7">o</span><span style="--i:8">u</span><span style="--i:9">r</span> 
-                  <span style="--i:10">P</span><span style="--i:11">e</span><span style="--i:12">t,</span> <br>
-                  <span style="--i:13">B</span><span style="--i:14">e</span><span style="--i:15">c</span><span style="--i:16">a</span><span style="--i:17">u</span><span style="--i:18">s</span><span style="--i:19">e</span> 
-                  <span style="--i:20">T</span><span style="--i:21">h</span><span style="--i:22">e</span><span style="--i:23">y</span> 
-                  <span style="--i:24">D</span><span style="--i:25">e</span><span style="--i:26">s</span><span style="--i:27">e</span><span style="--i:28">r</span><span style="--i:29">v</span><span style="--i:30">e</span> 
-                  <span style="--i:31">t</span><span style="--i:32">h</span><span style="--i:33">e</span> 
-                  <span style="--i:34">B</span><span style="--i:35">e</span><span style="--i:36">s</span>
-                </h1>
+                <h1 class="md:text-7xl text-4xl md:mb-12 mb-4">Pamper Your Pet, Because They Deserve the Bes</h1>
                 <p class="md:text-2xl text-gray-600 text-lg mb-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                 <button class="md:text-2xl text-xl py-[10px] px-[30px] bg-btn-primary rounded-lg">Find a pet</button>
               </div>
@@ -285,40 +278,53 @@
         </div>
         <!-- Questions -->
         <div class="grid lg:grid-cols-2 grid-cols-1 gap-6">
-          <details class="w-full bg-red-500 p-6 rounded-xl">
-            <summary class="list-none">What is the return policy?</summary>
-            <p>Our return policy lasts 30 days...</p>
-          </details>
-          <details class="w-full bg-red-500 p-6 rounded-xl">
-            <summary class="list-none">What is the return policy?</summary>
-            <p>You can track your order by logging into your account...</p>
-          </details>
-          <details class="w-full bg-red-500 p-6 rounded-xl">
-            <summary class="list-none">What is the return policy?</summary>
-            <p>Yes, we do offer international shipping...</p>
-          </details>
-          <details class="w-full bg-red-500 p-6 rounded-xl">
-            <summary class="list-none">What is the return policy?</summary>
-            <p>We accept all major credit cards, PayPal, and Apple Pay...</p>
-          </details>
-          <details class="w-full bg-red-500 p-6 rounded-xl">
-            <summary class="list-none">What is the return policy?</summary>
-            <p>We accept all major credit cards, PayPal, and Apple Pay...</p>
-          </details>
-          <details class="w-full bg-red-500 p-6 rounded-xl">
-            <summary class="list-none">What is the return policy?</summary>
-            <p>Yes, we offer digital gift cards...</p>
-          </details>
-          <details class="w-full bg-red-500 p-6 rounded-xl">
-            <summary class="list-none">What is the return policy?</summary>
-            <p>You can reach us via email or our contact form...</p>
-          </details>
-          <details class="w-full bg-red-500 p-6 rounded-xl">
-            <summary class="list-none">What is the return policy?</summary>
-            <p>Yes, we offer seasonal discounts and promotions...</p>
-          </details>
+          <div class="grid gap-6">
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What types of pets do you sell?</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">Do you offer pet accessories and grooming products?</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">Do you provide home delivery for pet food and supplies?</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>
+          <div class="grid gap-6">
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" checked="checked" />
+              <div class="collapse-title text-xl font-medium">Do you have a pet adoption service?</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">Are the pets vaccinated before being sold?</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+              <input type="radio" name="my-accordion-2" />
+              <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+              <div class="collapse-content">
+                <p>hello</p>
+              </div>
+            </div>
+          </div>       
         </div>
-        
       </section>
 
       <!-- Get pawsome news section -->
